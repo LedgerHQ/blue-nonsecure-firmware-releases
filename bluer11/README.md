@@ -17,7 +17,7 @@ pip install protobuf
   - Update the Operating System (hash 07c9d1b82709d0babe5159836d0c85f3cefd1db8328ac970e95cca9bf0ec6a3f) from the Secure Operating System update directory - the device turns off
 
 ```
-python updateFirmware.py --url https://shop.hardwarewallet.com/hsm/process --perso perso_10 --firmware upgrade_bluer11 --firmwareKey upgrade_bluer11_key
+python updateFirmware.py --url https://hsmprod.hardwarewallet.com/hsm/process --perso perso_10 --firmware upgrade_bluer11 --firmwareKey upgrade_bluer11_key
 ```
   - Turn on Ledger Blue, keeping the button pressed until "secure bootloader", then "bootloader" is displayed
   - Update the bootloader with the following command. Following the update, the script displays an error and the device turns off
@@ -34,6 +34,6 @@ python -m ledgerblue.runScript --fileName main/stm32l476_seproxyhal.patch_apdu
 ```
   - When this is done, the device is back to the "Connect USB" screen. Finalize the firmware personalization from the Secure Operating System directory with
 ``` 
-python refactory.py --url https://shop.hardwarewallet.com/hsm/process --perso perso_10 --persoNew perso_11
+python refactory.py --url https://hsmprod.hardwarewallet.com/hsm/process --perso perso_10 --persoNew perso_11
 ```
 
