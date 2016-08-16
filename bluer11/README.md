@@ -26,7 +26,7 @@ python updateFirmware.py --url https://hsmprod.hardwarewallet.com/hsm/process --
 python -m ledgerblue.runScript --fileName bootloader/stm32l476_blue_bootloader_upgrade.patch_apdu      
 ```
   - Turn on Ledger Blue, the device displays "Upgrading Bootloader", then turns off
-  - Turn on Ledger Blue, keeping the button pressed until "secure bootloader", then "bootloader" is displayed
+  - Turn on Ledger Blue
   - Update the firmware with the following command 
 
 ```
